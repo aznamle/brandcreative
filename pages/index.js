@@ -9,7 +9,7 @@ export default function Home({ doc }) {
   return (
       <div>
         {/* <HeroBanner banner={doc.data}/> */}
-        <SliceZone sliceZone={doc.data.body} />
+        {/* <SliceZone sliceZone={doc.data.body} /> */}
       </div>
     )
   }
