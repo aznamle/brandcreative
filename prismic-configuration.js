@@ -34,4 +34,4 @@ export const hrefResolver = (doc) => {
     return `/blog/[uid]`
   }
   return '/'
-}  
+}
