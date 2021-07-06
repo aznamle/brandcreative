@@ -4,10 +4,10 @@ import Section from '../Section'
 
 const PageHeader = ({ slice }) => {
     return (
-        <div className=" flex w-100 bg-center bg-no-repeat bg-cover"
+        <div className=" flex w-100 bg-bottom bg-no-repeat bg-cover"
             style={{
             backgroundImage: `url(${slice.primary.header_image.url})`,
-            height: '100vh'
+            height: '50vh'
             }}
         >            
         <div className=''/>

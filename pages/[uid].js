@@ -12,13 +12,13 @@ const Page = ({ doc }) => {
       if (doc && doc.data) {
       return (
           <div>
-            {/* <Head>
+            <Head>
               <title> {RichText.asText(doc.data.meta_title)} </title>
               <meta 
                 name='description' 
                 content = {RichText.asText(doc.data.meta_description)}
               />
-            </Head> */}
+            </Head>
             <SliceZone sliceZone={doc.data.body} />
           </div>
           
