@@ -17,7 +17,7 @@ export default function HeroBanner({ banner }) {
             />
         }
 
-        <div className="flex absolute inset-0 z-10 items-end justify-center h-screen w-full bg-cover bg-gray-900 bg-opacity-20" />
+        <div className="flex absolute inset-0 z-10 items-end justify-center h-screen w-full bg-cover bg-gray-900 bg-opacity-30" />
         </div>
     )
 }
