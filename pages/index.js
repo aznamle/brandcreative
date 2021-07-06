@@ -1,5 +1,6 @@
 import Prismic from '@prismicio/client'
 import { Client } from '../prismic-configuration'
+import HeroBanner from '../components/HeroBanner'
 // import { SliceZone } from '../components'
 
 export default function Home({ doc }) {
@@ -8,7 +9,7 @@ export default function Home({ doc }) {
   if(doc && doc.data) {
   return (
       <div>
-        {/* <HeroBanner banner={doc.data}/> */}
+        <HeroBanner banner={doc.data}/>
         {/* <SliceZone sliceZone={doc.data.body} /> */}
       </div>
     )
