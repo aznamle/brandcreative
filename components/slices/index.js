@@ -1,4 +1,5 @@
 export { default as PageHeader } from './PageHeader'
+export { default as FeatureBlock } from './FeatureBlock'
 
 
 

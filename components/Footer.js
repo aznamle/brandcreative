@@ -4,19 +4,19 @@ function Footer() {
     return (
     <div>
 
-    <div className="w-full h-full pt-20 flex items-center justify-center bg-black">
+    <div className="w-full h-full pt-16 flex items-center justify-center bg-black">
         <div className="md:w-2/3 w-full px-4 text-white flex flex-col">
-            <div className="w-full text-7xl font-bold">
+            <div className="w-full text-3xl md:text-4xl lg:text-7xl font-bold">
                 <h1 className="w-full md:w-2/3">Get in touch us with us. Let your Brand speak.</h1>
             </div>
-            <div className="flex mt-8 flex-col md:flex-column md:justify-between">
+            <div className="flex mt-2 md:mt-6 lg:mt-8 flex-col md:flex-column md:justify-between">
                 <p className="w-full md:w-2/3 text-gray-400">To ensure that all Wikipedia content is verifiable, anyone may question an uncited claim. If your work has been tagged</p>
                 <div className="w-44 pt-6">
                     <a className="bg-white justify-center text-black text-center rounded-lg shadow px-10 py-3 flex items-center">Contact Us</a>
                 </div>
             </div>
             <div className="flex flex-col border-b border-gray-600">
-                <div className="flex mt-24 mb-12 flex-row justify-between">
+                <div className="flex mt-12 md:mt-20 lg:mt-24 mb-12 flex-row justify-between">
                     <a className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">About</a>
                     <a className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">Services</a>
                     <a className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">Why us</a>
@@ -48,7 +48,7 @@ function Footer() {
             <div className=" border-gray-200">
                 <div className="flex flex-wrap items-center justify-center px-10 py-10 mx-auto text-base bg-blueGray-900 ">
                     <div className="flex flex-wrap items-center justify-center mx-auto text-base">
-                        <p className="mr-5 text-lg text-center tracking-widest text-gray-200"><strong>Brand<i>creative</i></strong> | 2021
+                        <p className="mr-5 text-lg text-center text-gray-200"><strong>Brand<i>creative</i></strong> | 2021
                         </p>
 
                         <a href="#"

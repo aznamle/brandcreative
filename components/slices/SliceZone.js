@@ -1,5 +1,8 @@
 import React from 'react'
-import { PageHeader } from './'
+import { 
+  PageHeader,
+  FeatureBlock
+ } from './'
 
 const SliceZone = ({ sliceZone }) => (
     <div>
@@ -7,6 +10,8 @@ const SliceZone = ({ sliceZone }) => (
       switch (slice.slice_type) {
         case ('page_header'):
           return <PageHeader slice={slice} key={`slice-${index}`} />
+        case ('feature_block'):
+          return <FeatureBlock slice={slice} key={`slice-${index}`} />
         }
     })}
     </div>
