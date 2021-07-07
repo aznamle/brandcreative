@@ -10,7 +10,7 @@ function Footer() {
                 <h1 className="w-full md:w-2/3">Get in touch us with us. Let your Brand speak.</h1>
             </div>
             <div className="flex mt-2 md:mt-6 lg:mt-8 flex-col md:flex-column md:justify-between">
-                <p className="w-full md:w-2/3 text-gray-400">To ensure that all Wikipedia content is verifiable, anyone may question an uncited claim. If your work has been tagged</p>
+                <p className="w-full md:w-2/3 text-gray-400">Let your Brand speak.</p>
                 <div className="w-44 pt-6">
                     <a className="bg-white justify-center text-black text-center rounded-lg shadow px-10 py-3 flex items-center">Contact Us</a>
                 </div>
