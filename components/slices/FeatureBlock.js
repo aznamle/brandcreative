@@ -18,7 +18,6 @@ const FeatureBlock = ({ slice }) => {
                             ))}
                     </div>
                     </Section>
-
             </div>
             <div className='w-1/3 mx-auto'>
                 <img src={slice.primary.feature_block_image.url} />
