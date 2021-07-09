@@ -1,7 +1,9 @@
 import React from 'react'
 import { 
   PageHeader,
-  FeatureBlock
+  FeatureBlock,
+  BreakBlock,
+  CenterBlockText
  } from './'
 
 const SliceZone = ({ sliceZone }) => (
@@ -12,6 +14,10 @@ const SliceZone = ({ sliceZone }) => (
           return <PageHeader slice={slice} key={`slice-${index}`} />
         case ('feature_block'):
           return <FeatureBlock slice={slice} key={`slice-${index}`} />
+        case ('break_block'):
+          return <BreakBlock slice={slice} key={`slice-${index}`} />
+        case('center_text_block'):
+          return <CenterBlockText slice={slice} key={`slice-${index}`} />
         }
     })}
     </div>
