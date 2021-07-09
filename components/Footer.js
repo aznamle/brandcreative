@@ -7,7 +7,7 @@ function Footer() {
     <div className="w-full h-full pt-16 flex items-center justify-center bg-black">
         <div className="md:w-2/3 w-full px-4 text-white flex flex-col">
             <div className="w-full text-3xl md:text-4xl lg:text-7xl font-bold">
-                <h1 className="w-full md:w-2/3">Get in touch us with us. Let your Brand speak.</h1>
+                <h1 className="w-full md:w-2/3">Get in touch with us. Let your Brand speak.</h1>
             </div>
             <div className="flex mt-2 md:mt-6 lg:mt-8 flex-col md:flex-column md:justify-between">
                 <p className="w-full md:w-2/3 text-gray-400">Let your Brand speak.</p>

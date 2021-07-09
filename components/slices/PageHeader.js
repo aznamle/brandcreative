@@ -17,15 +17,14 @@ const PageHeader = ({ slice }) => {
                             {RichText.asText(slice.primary.sub_title)}
                         </p>
                         <h1 className='text-3xl md:text-4xl text-white font-light py-2'>{RichText.asText(slice.primary.title)}</h1>
-                            {slice.primary.block_description.map((text,i) => (
-                                <p key={i} className='text-md lg:text-xl text-white font-light'>
-                                    {text.text}
-                                </p>
-                            ))}
+                        {slice.primary.block_description.map((text,i) => (
+                            <p key={i} className='text-md lg:text-xl text-white font-light'>
+                                {text.text}
+                            </p>
+                        ))}
                     </Section>
                 </div>
             </div>
-
         </div>
     )
 }
