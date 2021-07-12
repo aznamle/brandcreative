@@ -4,11 +4,11 @@ import React from 'react'
 const ContentBlock = ({ slice }) => {
     
     const align = slice.primary.image_align
-    console.log(slice)
+    
     return (
         <div className='max-w-screen-2xl mx-auto py-32 space-y-6'>
             
-            <div className='max-w-4xl '>
+            <div className='max-w-4xl pb-4'>
                 <h1 className='font-light text-5xl leading-relaxed'>{RichText.asText(slice.primary.content_block_title)}</h1>
             </div>
 
