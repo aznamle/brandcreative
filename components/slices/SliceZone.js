@@ -3,7 +3,8 @@ import {
   PageHeader,
   FeatureBlock,
   BreakBlock,
-  CenterBlockText
+  CenterBlockText,
+  ContentBlock
  } from './'
 
 const SliceZone = ({ sliceZone }) => (
@@ -16,8 +17,10 @@ const SliceZone = ({ sliceZone }) => (
           return <FeatureBlock slice={slice} key={`slice-${index}`} />
         case ('break_block'):
           return <BreakBlock slice={slice} key={`slice-${index}`} />
-        case('center_text_block'):
+        case ('center_text_block'):
           return <CenterBlockText slice={slice} key={`slice-${index}`} />
+        case ('content_block'):
+          return <ContentBlock slice={slice} key={`slice-${index}`} />
         }
     })}
     </div>
