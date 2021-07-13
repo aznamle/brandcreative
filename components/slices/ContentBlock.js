@@ -1,5 +1,6 @@
 import { RichText } from 'prismic-reactjs'
 import React from 'react'
+import Image from 'next/image'
 
 const ContentBlock = ({ slice }) => {
     
@@ -16,7 +17,7 @@ const ContentBlock = ({ slice }) => {
 
                 { align == false ? 
                     <div className='w-2/3'>
-                        <img src={slice.primary.content_block_image.url} />
+                        <Image src={slice.primary.content_block_image.url} alt="image" width={1800} height={708} />
                     </div>
                     : undefined
                 }
@@ -28,7 +29,7 @@ const ContentBlock = ({ slice }) => {
                 
                 { align == true ? 
                     <div className='w-2/3'>
-                        <img src={slice.primary.content_block_image.url} />
+                        <Image src={slice.primary.content_block_image.url} alt="image" width={1800} height={708} />
                     </div>
                     : undefined
                 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 import { RichText } from 'prismic-reactjs'
 import Section from '../Section'
-
+import Image from 'next/image'
 
 const FeatureBlock = ({ slice }) => {
     return (
@@ -20,7 +20,7 @@ const FeatureBlock = ({ slice }) => {
                     </Section>
             </div>
             <div className='w-1/3 mx-auto'>
-                <img src={slice.primary.feature_block_image.url} />
+                <img src={slice.primary.feature_block_image.url} alt='image' />
             </div>
         </div>
     )
