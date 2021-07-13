@@ -7,7 +7,7 @@ const BreakBlock = ({ slice }) => {
         <div className="w-100 bg-center bg-no-repeat bg-cover"
             style={{
             height: '50vh',
-            backgroundImage: `linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url(${slice.primary.break_block_image.url}`,
+            backgroundImage: `linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url(${slice.primary.break_block_image.url}`,
             }}
         >
             <div className='flex md:max-w-5xl lg:max-w-screen-2xl mx-auto items-center justify-end h-full'>
