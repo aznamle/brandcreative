@@ -20,7 +20,6 @@ const BreakBlock = ({ slice }) => {
                     </Section>
                 </div>
             </div>
-
         </div>
     )
 }
