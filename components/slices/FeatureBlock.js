@@ -5,6 +5,7 @@ import Section from '../Section'
 import Image from 'next/image'
 
 const FeatureBlock = ({ slice }) => {
+    console.log(slice)
     return (
         <div className='flex max-w-screen-2xl py-16 mx-auto'>
             <div className='w-2/3'>
@@ -20,7 +21,7 @@ const FeatureBlock = ({ slice }) => {
                     </Section>
             </div>
             <div className='w-1/3 mx-auto'>
-                <img src={slice.primary.feature_block_image.url} alt='image' />
+                <Image src={slice.primary.feature_block_image.url} alt='image' width={slice.primary.feature_block_image.dimensions.width} height={slice.primary.feature_block_image.dimensions.height} />
             </div>
         </div>
     )

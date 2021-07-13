@@ -17,7 +17,7 @@ const ContentBlock = ({ slice }) => {
 
                 { align == false ? 
                     <div className='w-2/3'>
-                        <Image src={slice.primary.content_block_image.url} alt="image" width={1800} height={708} />
+                        <Image src={slice.primary.content_block_image.url} alt="image" width={slice.primary.content_block_image.dimensions.width} height={slice.primary.content_block_image.dimensions.height} />
                     </div>
                     : undefined
                 }
@@ -29,7 +29,7 @@ const ContentBlock = ({ slice }) => {
                 
                 { align == true ? 
                     <div className='w-2/3'>
-                        <Image src={slice.primary.content_block_image.url} alt="image" width={1800} height={708} />
+                        <Image src={slice.primary.content_block_image.url} alt="image" width={slice.primary.content_block_image.dimensions.width} height={slice.primary.content_block_image.dimensions.height} />
                     </div>
                     : undefined
                 }
