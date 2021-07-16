@@ -22,7 +22,7 @@ export const linkResolver = (doc) => {
     if (doc.type === 'page') {
       return `/${doc.uid}`;
     } else if (doc.type === 'clients') {
-      return `/${doc.uid}`
+      return `clients/${doc.uid}`
     }
     return '/'
 }
@@ -31,7 +31,7 @@ export const hrefResolver = (doc) => {
   if (doc.type === 'page') {
     return '/[uid]'
   } else if (doc.type === 'clients') {
-    return `/[uid]`
+    return `clients/[uid]`
   }
   return '/'
 }
