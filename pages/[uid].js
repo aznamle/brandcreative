@@ -9,18 +9,17 @@ import { RichText } from 'prismic-reactjs'
 
 
 const Page = ({ doc, clients }) => {
-  console.log(doc)
   if(!doc) return <div>Loading</div>
       if (doc && doc.data) {
       return (
           <div>
-            <Head>
+            {/* <Head>
               <title> {RichText.asText(doc.data.meta_title)} </title>
               <meta 
                 name='description' 
                 content = {RichText.asText(doc.data.meta_description)}
               />
-            </Head>
+            </Head> */}
             <SliceZone sliceZone={doc.data.body} clients={clients}/>
           </div>
           
@@ -37,7 +36,6 @@ export async function getStaticProps({ params, preview = null, previewData = {} 
 
     const clients = await client.query(
       Prismic.Predicates.at("document.type", "clients"), {
-        orderings: "[my.clients.publish_date desc]",
         ...(ref ? { ref } : null)
       },
     )
