@@ -6,10 +6,14 @@ import { hrefResolver, linkResolver } from '../../prismic-configuration'
 
 
 const ClientsBlock = ({ slice, clients }) => {
+
+    console.log(slice.items)
+    const logos = slice.items <= 3
+
     return (
     <div className='bg-gray-50'>
-        <div className='max-w-3xl lg:max-w-5xl mx-auto py-36 space-y-24'>
-            <div className='md:flex items-stretch justify-center'>
+        <div className='py-36 space-y-24'>
+            <div className='md:flex max-w-3xl lg:max-w-5xl mx-auto items-stretch justify-center'>
                 <div className='text-black md:w-1/3 text-center'>
                     <h1 className='text-5xl font-bold tracking-wide'>{RichText.asText(slice.primary.client_block_title)}</h1>
                 </div>
@@ -18,11 +22,11 @@ const ClientsBlock = ({ slice, clients }) => {
                 </div>
             </div>
 
-            <div className='items-center justify-center flex space-x-5'>
+            <div className={`mx-auto max-w-screen-2xl space-x-5 grid ${ logos ? `grid-cols-5` : `grid-cols-3` } grid-rows-1 gap-4`}>
                 {slice.items.map((client, i) => (
-                    <div key={i} className='bg-white p-16'>
+                    <div key={i} className='bg-white flex'>
                         <Link href={`clients/${client.client_page.uid}`}>
-                            <Image  className='object-center block transform duration-300 ease-out hover:scale-75' src={client.client_logo.url} width={250} height={200} />
+                            <Image  className='object-center block transform duration-300 ease-out hover:scale-75' src={client.client_logo.url} width={client.client_logo.dimensions.width} height={client.client_logo.dimensions.height} />
                         </Link>
                     </div>
                 ))}
