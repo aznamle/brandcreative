@@ -7,7 +7,7 @@ const Clients = ({ doc }) => {
     console.log(doc)
     return (
         <div>
-            CLIENTS LOL
+            <SliceZone sliceZone={doc.data.body} />
         </div>
     )
 }
