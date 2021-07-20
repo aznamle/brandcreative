@@ -22,7 +22,7 @@ const ClientsBlock = ({ slice, clients }) => {
                 </div>
             </div>
 
-            <div className={`mx-auto max-w-screen-2xl space-x-5 grid ${ logos <= 3 ? `grid-cols-3` : `grid-cols-5` } grid-rows-1 `}>
+            <div className={`mx-auto space-x-3 grid ${ logos <= 3 ? `grid-cols-3 max-w-6xl` : `grid-cols-5 max-w-screen-2xl` } grid-rows-1 `}>
                 {slice.items.map((client, i) => (
                     <div key={i} className='bg-white flex'>
                         <Link href={`clients/${client.client_page.uid}`}>
