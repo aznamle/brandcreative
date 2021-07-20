@@ -31,7 +31,7 @@ const Links = ({ menuLinks }) => {
   const MenuLink = ({ menuLink }) => (
     <li className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-200 mr-4">
       <DocLink
-        linkClass={`${ navbar ? `text-black hover:text-gray-500` : `text-white hover:text-gray-600`} font-light text-md lg:text-xl md:text-l transition ease-in-out duration-300`} 
+        linkClass={`${ navbar ? `text-black hover:text-gray-500` : `text-white hover:text-gray-600`} font-extralight text-md lg:text-xl md:text-l transition ease-in-out duration-300`} 
         link={menuLink.link}
         toggleExpansion={toggleExpansion}
         >

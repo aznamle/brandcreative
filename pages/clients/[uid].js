@@ -4,12 +4,15 @@ import { SliceZone } from '../../components'
 import { queryRepeatableDocuments } from '../../util/queries'
 
 const Clients = ({ doc }) => {
-    console.log(doc)
-    return (
-        <div>
-            <SliceZone sliceZone={doc.data.body} />
-        </div>
-    )
+    if(!doc) return <div>Loading</div>
+    if (doc && doc.data) {
+        return (
+            <div className=''>
+                <SliceZone sliceZone={doc.data.body} />
+            </div>
+        )
+    }
+    return null;
 }
 
 export default Clients
