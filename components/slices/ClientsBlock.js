@@ -8,7 +8,7 @@ import { hrefResolver, linkResolver } from '../../prismic-configuration'
 const ClientsBlock = ({ slice, clients }) => {
 
     console.log(slice.items)
-    const logos = slice.items <= 3
+    const logos = slice.items.length
 
     return (
     <div className='bg-gray-50'>
@@ -22,7 +22,7 @@ const ClientsBlock = ({ slice, clients }) => {
                 </div>
             </div>
 
-            <div className={`mx-auto max-w-screen-2xl space-x-5 grid ${ logos ? `grid-cols-5` : `grid-cols-3` } grid-rows-1 gap-4`}>
+            <div className={`mx-auto max-w-screen-2xl space-x-5 grid ${ logos <= 3 ? `grid-cols-3` : `grid-cols-5` } grid-rows-1 `}>
                 {slice.items.map((client, i) => (
                     <div key={i} className='bg-white flex'>
                         <Link href={`clients/${client.client_page.uid}`}>
