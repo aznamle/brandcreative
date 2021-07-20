@@ -36,6 +36,7 @@ export async function getStaticProps({ params, preview = null, previewData = {} 
 
     const clients = await client.query(
       Prismic.Predicates.at("document.type", "clients"), {
+        orderings: "[my.clients desc]",
         ...(ref ? { ref } : null)
       },
     )

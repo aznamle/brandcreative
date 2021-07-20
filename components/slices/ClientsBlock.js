@@ -1,24 +1,28 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { RichText } from 'prismic-reactjs'
+import { hrefResolver, linkResolver } from '../../prismic-configuration'
 
-const ClientsBlock = ({ slice }) => {
-    console.log(slice)
+
+const ClientsBlock = ({ slice, clients }) => {
     return (
-        <div className='max-w-5xl mx-auto py-36'>
-            <div className='flex items-center justify-center'>
-                <div className='text-black w-1/3 text-center'>
-                    <h1 className='text-3xl font-bold tracking-wide'>{RichText.asText(slice.primary.client_block_title)}</h1>
+        <div className='max-w-3xl lg:max-w-5xl mx-auto py-36 space-y-24'>
+            <div className='md:flex items-center justify-center'>
+                <div className='text-black md:w-1/3 text-center'>
+                    <h1 className='text-5xl font-bold tracking-wide'>{RichText.asText(slice.primary.client_block_title)}</h1>
                 </div>
-                <div className='w-2/3 text-center'>
-                    <p className='text-2xl font-extralight tracking-wide leading-normal'>{RichText.asText(slice.primary.clients_block_description)}</p>
+                <div className='md:w-2/3 text-center'>
+                    <p className='text-xl font-extralight tracking-wide leading-normal'>{RichText.asText(slice.primary.clients_block_description)}</p>
                 </div>
             </div>
 
-            <div className='items-center justify-center flex'>
+            <div className='items-center justify-center flex space-x-5'>
                 {slice.items.map((client, i) => (
-                    <div>
-                        <span>{client.client_page.slug}</span>
+                    <div key={i} className='bg-white'>
+                        <Link href={`clients/${client.client_page.uid}`}>
+                            <Image  className='object-center block transform duration-500 ease-in-out hover:scale-75' src={client.client_logo.url} width={250} height={200} />
+                        </Link>
                     </div>
                 ))}
             </div>
