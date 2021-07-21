@@ -10,7 +10,7 @@ const BreakBlock = ({ slice }) => {
             backgroundImage: `linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url(${slice.primary.break_block_image.url}`,
             }}
         >
-            <div className='flex md:max-w-5xl lg:max-w-screen-2xl mx-auto items-center justify-end h-full'>
+            <div className='flex md:max-w-5xl lg:max-w-screen-2xl mx-auto items-center justify-end h-full px-8 md:px-0'>
                 <div className='text-right'>
                     <Section>
                         <p className='text-3xl md:text-6xl text-white font-extralight py-2'>
