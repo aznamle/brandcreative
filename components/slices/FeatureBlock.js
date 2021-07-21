@@ -12,7 +12,7 @@ const FeatureBlock = ({ slice }) => {
                     <div className="max-w-md lg:max-w-5xl items-center justify-center space-y-6 md:px-12 py-4 md:py-8 w-100">
                         <h1 className="text-2xl md:text-5xl font-light leading-relaxed">{RichText.asText(slice.primary.feature_block_title)}</h1>
                             {slice.primary.feature_block_description.map((text, i ) => (
-                                <p key={i} className='text-2xl font-light tracking-wide leading-relaxed'>
+                                <p key={i} className='text-2xl font-extralight tracking-wide leading-relaxed text-gray-700'>
                                     {text.text}
                                 </p>
                             ))}

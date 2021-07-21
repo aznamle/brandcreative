@@ -9,7 +9,7 @@ const CompanyBlock = ({ slice }) => {
                 <Image src={slice.primary.company_logo.url} width={slice.primary.company_logo.dimensions.width} height={slice.primary.company_logo.dimensions.height} />
             </div>
             { slice.primary.company_description.map((text,i) => (
-                <p className='text-xl font-extralight tracking-wide leading-relaxed'>
+                <p key={i} className='text-xl font-extralight tracking-wide leading-relaxed text-gray-700'>
                     {text.text}
                 </p>
             ))}

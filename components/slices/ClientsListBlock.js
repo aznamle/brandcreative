@@ -16,7 +16,7 @@ const ClientsListBlock = ({ slice, clients }) => {
                         <h1 className='text-5xl font-bold tracking-wide'>{RichText.asText(slice.primary.client_block_title)}</h1>
                     </div>
                     <div className='md:w-2/3 text-center'>
-                        <p className='text-xl font-extralight tracking-wide leading-relaxed'>{RichText.asText(slice.primary.clients_block_description)}</p>
+                        <p className='text-xl font-extralight tracking-wide leading-relaxed text-gray-700'>{RichText.asText(slice.primary.clients_block_description)}</p>
                     </div>
                 </div>
 
