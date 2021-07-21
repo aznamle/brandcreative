@@ -5,7 +5,8 @@ import {
   BreakBlock,
   CenterBlockText,
   ContentBlock,
-  ClientsBlock
+  ClientsListBlock,
+  CompanyBlock
  } from './'
 
 const SliceZone = ({ sliceZone }) => (
@@ -23,7 +24,9 @@ const SliceZone = ({ sliceZone }) => (
         case ('content_block'):
           return <ContentBlock slice={slice} key={`slice-${index}`} />
         case ('clients_block'):
-          return <ClientsBlock slice={slice} key={`slice-${index}`} />
+          return <ClientsListBlock slice={slice} key={`slice-${index}`} />
+        case ('company_block'):
+          return <CompanyBlock slice={slice} key={`slice-${index}`} />
         }
     })}
     </div>
