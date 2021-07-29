@@ -6,7 +6,7 @@ const PageHeader = ({ slice }) => {
     return (
         <div className=" flex w-100 bg-center bg-no-repeat bg-cover"
             style={{
-            backgroundImage: `url(${slice.primary.header_image.url})`,
+            backgroundImage: `linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url(${slice.primary.header_image.url})`,
             height: '50vh',
             }}
         >

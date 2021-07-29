@@ -5,6 +5,6 @@ export { default as CenterBlockText } from './CenterTextBlock'
 export { default as ContentBlock } from './ContentBlock'
 export { default as ClientsListBlock } from './ClientsListBlock'
 export { default as CompanyBlock } from './CompanyBlock'
-
+export { default as TeamBlock } from './TeamBlock'
 
 export { default as SliceZone } from './SliceZone'
