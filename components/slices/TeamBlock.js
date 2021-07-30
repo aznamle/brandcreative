@@ -5,7 +5,6 @@ import Section from '../Section'
 import Image from 'next/image'
 
 const TeamBlock = ({ slice }) => {
-    console.log(slice)
     return (
         <div className='max-w-screen-xl mx-auto py-36'>
             <div className='grid grid-flow-row grid-cols-4 grid-rows-1 gap-12'>
