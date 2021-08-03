@@ -16,8 +16,8 @@ const ServicesBlock = ({ slice }) => {
                     <div className='grid grid-flow-row grids-col-1 md:grid-cols-3 grid-rows-1 gap-12'>
 
                         {slice.items.map((item,i) => (
-                        <Section>
-                            <div key={i} className='items-center text-center space-y-2 py-2 md:py-12'>
+                        <Section key={i} >
+                            <div className='items-center text-center space-y-2 py-2 md:py-12'>
                                 <Image src={item.service_icon.url} width={60} height={60} />
                                 <h1 className='text-xl font-bold'>{RichText.asText(item.service_title)}</h1>
                                 <p className='text-gray-500 font-light leading-loose'>

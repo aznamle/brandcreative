@@ -8,7 +8,8 @@ import {
   ClientsListBlock,
   CompanyBlock,
   TeamBlock,
-  ServicesBlock
+  ServicesBlock,
+  StepsBlock
  } from './'
 
 const SliceZone = ({ sliceZone }) => (
@@ -33,6 +34,8 @@ const SliceZone = ({ sliceZone }) => (
           return <TeamBlock slice={slice} key={`slice-${index}`} />
         case ('services_block'):
           return <ServicesBlock slice={slice} key={`slice-${index}`} />
+        case ('steps_block'):
+          return <StepsBlock slice={slice} key={`slice-${index}`} />
         }
     })}
     </div>

@@ -10,7 +10,7 @@ const ContentBlock = ({ slice }) => {
         <div className='max-w-screen-2xl mx-auto px-6 py-16 md:py-36 space-y-1 md:space-y-6'>
             
             <div className='max-w-4xl p-4'>
-                <h1 className='font-light text-3xl md:text-5xl leading-relaxed'>{RichText.asText(slice.primary.content_block_title)}</h1>
+                <h1 className='font-extralight text-3xl md:text-5xl leading-relaxed'>{RichText.asText(slice.primary.content_block_title)}</h1>
             </div>
 
             <div className='md:flex md:space-x-10'>
