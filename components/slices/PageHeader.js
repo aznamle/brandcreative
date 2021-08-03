@@ -13,7 +13,7 @@ const PageHeader = ({ slice }) => {
             <div className='flex md:max-w-5xl lg:max-w-screen-xl mx-auto items-center justify-center h-full'>
                 <div className='text-center space-y-4 px-4'>
                     <Section>
-                        <p className='text-lg text-white tracking-wider'>
+                        <p className='text-lg font-light text-white tracking-wider'>
                             {RichText.asText(slice.primary.sub_title)}
                         </p>
                         <h1 className='text-3xl md:text-4xl text-white font-light py-2'>{RichText.asText(slice.primary.title)}</h1>
