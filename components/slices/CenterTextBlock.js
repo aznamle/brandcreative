@@ -4,7 +4,7 @@ import Section from '../Section'
 
 const CenterTextBlock = ({ slice }) => {
     return (
-        <div className='max-w-screen-2xl mx-auto py-48 text-center items-center justify-center'>
+        <div className='max-w-screen-2xl mx-auto px-6 py-36 md:py-48 text-center items-center justify-center'>
             <Section>
                 <div className='space-y-6'>
                 <h1 className='text-5xl text-black font-light'>{RichText.asText(slice.primary.center_block_title)}</h1>

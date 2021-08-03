@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const FeatureBlock = ({ slice }) => {
     return (
-        <div className='md:flex max-w-screen-2xl py-16 mx-auto px-4 space-y-4'>
+        <div className='md:flex max-w-screen-2xl px-12 py-16 mx-auto space-y-4'>
             <div className='md:w-2/3'>
                 <Section>
                     <div className="max-w-md lg:max-w-5xl items-center justify-center space-y-6 md:px-12 py-4 md:py-8 w-100">
