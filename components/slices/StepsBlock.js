@@ -10,12 +10,12 @@ const StepsBlock = ({ slice }) => {
 
     return (
         <div className="text-gray-600 body-font">
-            <h1 className='text-center text-black font-light text-2xl'>
+            <h1 className='text-center text-black font-light text-2xl md:text-4xl'>
                 {RichText.asText(slice.primary.steps_block_title)}
             </h1>
             <div className="max-w-screen-2xl py-24 mx-auto flex flex-wrap">
 
-                <div className="flex flex-wrap w-full">
+                <div className="flex flex-wrap w-full px-6">
                     <div className="lg:w-2/5 md:w-1/2 md:pr-16 md:py-6">
 
                         

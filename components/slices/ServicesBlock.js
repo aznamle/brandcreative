@@ -21,8 +21,8 @@ const ServicesBlock = ({ slice }) => {
                                 <Image src={item.service_icon.url} width={60} height={60} />
                                 <h1 className='text-xl font-bold'>{RichText.asText(item.service_title)}</h1>
                                 <p className='text-gray-500 font-light leading-loose'>
-                                    {item.service_description.map(text => (
-                                        <div>
+                                    {item.service_description.map((text, i) => (
+                                        <div key={i}>
                                             {text.text}
                                         </div>
                                     ))}
