@@ -15,7 +15,7 @@ const StepsBlock = ({ slice }) => {
             </h1>
             <div className="max-w-screen-2xl py-24 mx-auto flex flex-wrap">
 
-                <div className="flex flex-wrap w-full px-6">
+                <div className="flex flex-wrap w-full px-6 md:px-0">
                     <div className="lg:w-2/5 md:w-1/2 md:pr-16 md:py-6">
 
                         
