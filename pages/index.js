@@ -2,9 +2,10 @@ import Prismic from '@prismicio/client'
 import { Client } from '../prismic-configuration'
 import HeroBanner from '../components/HeroBanner'
 import { SliceZone } from '../components'
+import Loader from '../components/Loader'
 
 export default function Home({ doc }) {
-  if(!doc && posts) return <div>loading</div>
+  if(!doc && posts) return <Loader />
   if(doc && doc.data) {
   return (
       <div>

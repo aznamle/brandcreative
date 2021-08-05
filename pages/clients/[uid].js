@@ -2,9 +2,11 @@ import React from 'react'
 import { Client } from '../../prismic-configuration'
 import { SliceZone } from '../../components'
 import { queryRepeatableDocuments } from '../../util/queries'
+import Loader from '../../components/Loader'
+
 
 const Clients = ({ doc }) => {
-    if(!doc) return <div>Loading</div>
+    if(!doc) return <div>loading</div>
     if (doc && doc.data) {
         return (
             <div className=''>
