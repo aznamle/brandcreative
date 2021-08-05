@@ -25,7 +25,7 @@ const StepsBlock = ({ slice }) => {
                                 <div className={`h-full ${ (itemslen === i + 1) ? 'w-0' : 'w-1' } bg-gray-200 pointer-events-none`}></div>
                             </div>
                             <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
-                                <Image src={step.step_icon.url} width={20} height={20}/>
+                                <Image src={step.step_icon.url} width={20} height={20} alt={step.step_icon.alt} />
                             </div>
                             <div className="flex-grow pl-4">
                                 <h2 className="font-medium title-font text-xl text-gray-900 mb-1 tracking-wider">

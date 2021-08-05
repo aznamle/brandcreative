@@ -8,7 +8,6 @@ import Section from '../Section'
 
 const ClientsListBlock = ({ slice }) => {
     const logos = slice.items.length
-
     return (
         <div className='bg-gray-100'>
             <div className='py-24 space-y-24'>
@@ -25,8 +24,12 @@ const ClientsListBlock = ({ slice }) => {
                     {slice.items.map((client, i) => (
                         <div key={i} className={`items-center bg-white flex ${ logos <= 3 ? 'px-0' : 'p-10'}`}>
                             <Section>
-                                <Link href={`clients/${client.client_page.uid}`}>
-                                    <Image className='object-center block transform duration-300 ease-out hover:scale-75 ' src={client.client_logo.url} width={client.client_logo.dimensions.width} height={client.client_logo.dimensions.height} />
+                                <Link href={`clients/${client.client_page.uid}`} passHref>
+                                    <Image className='object-center block transform duration-300 ease-out hover:scale-75' 
+                                        src={client.client_logo.url} width={client.client_logo.dimensions.width} 
+                                        height={client.client_logo.dimensions.height}
+                                        alt={client.client_logo.alt}
+                                    />
                                 </Link>
                             </Section>
                         </div>
