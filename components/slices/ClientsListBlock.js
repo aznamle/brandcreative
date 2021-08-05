@@ -2,6 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { RichText } from 'prismic-reactjs'
+import Section from '../Section'
+
 
 
 const ClientsListBlock = ({ slice }) => {
@@ -21,10 +23,12 @@ const ClientsListBlock = ({ slice }) => {
 
                 <div className={`mx-auto grid px-4 ${ logos <= 3 ? `grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl px-12 md:px-0` : `px-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-screen-2xl` } `}>
                     {slice.items.map((client, i) => (
-                        <div key={i} className={`bg-white flex ${ logos <= 3 ? 'px-0' : 'p-10'}`}>
-                            <Link href={`clients/${client.client_page.uid}`}>
-                                <Image className='object-center block transform duration-300 ease-out hover:scale-75 ' src={client.client_logo.url} width={client.client_logo.dimensions.width} height={client.client_logo.dimensions.height} />
-                            </Link>
+                        <div key={i} className={`items-center bg-white flex ${ logos <= 3 ? 'px-0' : 'p-10'}`}>
+                            <Section>
+                                <Link href={`clients/${client.client_page.uid}`}>
+                                    <Image className='object-center block transform duration-300 ease-out hover:scale-75 ' src={client.client_logo.url} width={client.client_logo.dimensions.width} height={client.client_logo.dimensions.height} />
+                                </Link>
+                            </Section>
                         </div>
                     ))}
                 </div>
