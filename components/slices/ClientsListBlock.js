@@ -24,12 +24,14 @@ const ClientsListBlock = ({ slice }) => {
                     {slice.items.map((client, i) => (
                         <div key={i} className={`items-center bg-white flex ${ logos <= 3 ? 'px-0' : 'p-10'}`}>
                             <Section>
-                                <Link href={{ pathname: `/clients/${client.client_page.uid}`}} passHref>
+                                <Link href={{ pathname: `/clients/${client.client_page.uid}`}}>
+                                <a>
                                     <Image className='object-center block transform duration-300 ease-out hover:scale-75' 
                                         src={client.client_logo.url} width={client.client_logo.dimensions.width} 
                                         height={client.client_logo.dimensions.height}
                                         alt={client.client_logo.alt}
                                     />
+                                </a>
                                 </Link>
                             </Section>
                         </div>

@@ -4,7 +4,7 @@ import { RichText } from 'prismic-reactjs'
 
 const CompanyBlock = ({ slice }) => {
     return (
-        <div className='max-w-3xl mx-auto space-y-4 py-36'>
+        <div className='max-w-3xl mx-auto space-y-4 py-36 px-12'>
         { slice.primary.company_logo.url != null ?
             <div className='w-1/3'>
                 <Image src={slice.primary.company_logo.url} 
