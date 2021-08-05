@@ -6,7 +6,7 @@ const CompanyBlock = ({ slice }) => {
     return (
         <div className='max-w-3xl mx-auto space-y-4 py-36 px-12'>
         { slice.primary.company_logo.url != null ?
-            <div className='w-1/3'>
+            <div className='w-1/2 md:w-1/3'>
                 <Image src={slice.primary.company_logo.url} 
                     width={slice.primary.company_logo.dimensions.width}
                     height={slice.primary.company_logo.dimensions.height}
