@@ -14,18 +14,18 @@ const TeamBlock = ({ slice }) => {
                     </div>
                 </Section>
                 <div className="grid grid-flow-row grid-cols-1  md:grid-cols-2 lg:grid-cols-3 grid-rows-1 gap-2 px-2">
-                {slice.items.map((item,i) => (
-                    <div key={i} className="p-2 w-full">
-                    <Section>
-                        <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg space-x-6">
-                            <Image className='bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4' src={item.employee_image.url} width={100} height={100} alt='team' />
-                            <div className="flex-grow">
-                                <h2 className="text-gray-900 title-font font-medium text-xl">{RichText.asText(item.employee_name)}</h2>
-                                <p className="text-gray-500 text-md lg:text-lg font-light">{RichText.asText(item.employee_role)}</p>
-                            </div>
+                    {slice.items.map((item,i) => (
+                        <div key={i} className="p-2 w-full">
+                            <Section>
+                                <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg space-x-6">
+                                    <Image className='bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4' src={item.employee_image.url} width={100} height={100} alt='team' />
+                                    <div className="flex-grow">
+                                        <h2 className="text-gray-900 title-font font-medium text-xl">{RichText.asText(item.employee_name)}</h2>
+                                        <p className="text-gray-500 text-md lg:text-lg font-light">{RichText.asText(item.employee_role)}</p>
+                                    </div>
+                                </div>
+                            </Section>
                         </div>
-                    </Section>
-                    </div>
                     ))}
                 </div>
             </div>

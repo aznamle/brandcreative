@@ -6,16 +6,16 @@ function Loader() {
     //bounce distance
     const load = {
         start: {
-            y: '40%'
+            y: '45%'
         },
         end: {
-            y: '60%'
+            y: '55%'
         }
     }
 
     //bounce effect
     const transition = {
-        duration: .4,
+        duration: .6,
         flip: Infinity,
         ease: 'easeInOut'
     }
@@ -26,13 +26,20 @@ function Loader() {
             initial='start'
             animate='end'
         >
-            <motion.h1 
-                className='font-semibold lg:text-5xl md:font-4xl text-center'
-                variants={load}
-                transition={transition}
-            >
-                <h1 className='font-bold '>Brand</h1><h1 className={`font-medium italic text-gray-400`}>Creative</h1>
-            </motion.h1>
+                <motion.h1 
+                    className='text-5xl font-bold'
+                    variants={load}
+                    transition={transition}
+                >
+                    Brand
+                </motion.h1>
+                <motion.h1
+                    className={`text-5xl font-bold italic text-gray-400`}
+                    variants={load}
+                    transition={transition}
+                >
+                    Creative         
+                </motion.h1>
         </motion.div>
     )
 }

@@ -6,7 +6,7 @@ import Loader from '../../components/Loader'
 
 
 const Clients = ({ doc }) => {
-    if(!doc) return <div>loading</div>
+    if(!doc) return <Loader />
     if (doc && doc.data) {
         return (
             <div className=''>

@@ -4,12 +4,15 @@ import { Client } from '../prismic-configuration'
 import { SliceZone } from '../components'
 import { queryRepeatableDocuments } from '../util/queries'
 
+import Loader from '../components/Loader'
+
+
 import Head from 'next/head'
 import { RichText } from 'prismic-reactjs'
 
 
 const Page = ({ doc, clients }) => {
-  if(!doc) return <div>Loading</div>
+  if(!doc) return <Loader />
       if (doc && doc.data) {
       return (
           <div>
