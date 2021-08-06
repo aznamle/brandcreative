@@ -22,19 +22,20 @@ const ClientsListBlock = ({ slice }) => {
 
                 <div className={`mx-auto grid px-4 gap-2 ${ logos <= 3 ? `grid-cols-1 md:grid-cols-3 max-w-6xl px-12 md:px-0` : `px-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 max-w-screen-2xl` } `}>
                     {slice.items.map((client, i) => (
-                        <div key={i} className={`items-center bg-white flex ${ logos <= 3 ? 'px-0' : 'p-10'}`}>
-                            <Section>
-                                <Link href={{ pathname: `/clients/${client.client_page.uid}`}}>
-                                    <a>
-                                        <Image className='object-center block transform duration-300 ease-out hover:scale-75' 
-                                            src={client.client_logo.url} width={client.client_logo.dimensions.width} 
-                                            height={client.client_logo.dimensions.height}
-                                            alt={client.client_logo.alt}
-                                        />
-                                    </a>
-                                </Link>
-                            </Section>
-                        </div>
+                        <Section key={i}>
+                            <div className={`h-70 items-center bg-white flex ${ logos <= 3 ? 'px-0' : 'p-10'}`}>
+                                    <Link href={{ pathname: `/clients/${client.client_page.uid}`}}>
+                                        <a>
+                                            <Image className='object-center block transform duration-300 ease-out hover:scale-75' 
+                                                src={client.client_logo.url} width={client.client_logo.dimensions.width} 
+                                                height={client.client_logo.dimensions.height}
+                                                alt={client.client_logo.alt}
+                                            />
+                                        </a>
+                                    </Link>
+                            </div>
+                        </Section>
+
                     ))}
                 </div>
             </div>

@@ -22,11 +22,11 @@ function Loader() {
 
     return (
         <motion.div 
-            className='h-full w-full flex items-center justify-center fixed top-0 left-0 bg-white opacity-100'
+            className='z-40 h-full w-full flex items-center justify-center fixed top-0 left-0 bg-white opacity-100'
             initial='start'
             animate='end'
         >
-                <motion.h1 
+                <motion.h1
                     className='text-5xl font-bold'
                     variants={load}
                     transition={transition}
