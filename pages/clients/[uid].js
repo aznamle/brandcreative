@@ -10,7 +10,15 @@ const Clients = ({ doc }) => {
     if (doc && doc.data) {
         return (
             <div className=''>
-                <SliceZone sliceZone={doc.data.body} />
+              <Head>
+                <title> {RichText.asText(doc.data.meta_title)} </title>
+                <meta 
+                  name='description'
+                  content = {RichText.asText(doc.data.meta_description)}
+                />
+              </Head>
+              
+              <SliceZone sliceZone={doc.data.body} />
             </div>
         )
     }

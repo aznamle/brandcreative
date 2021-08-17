@@ -9,6 +9,13 @@ export default function Home({ doc }) {
   if(doc && doc.data) {
   return (
       <div>
+        <Head>
+          <title> {RichText.asText(doc.data.meta_title)} </title>
+          <meta 
+            name='description'
+            content = {RichText.asText(doc.data.meta_description)}
+          />
+        </Head>
         <HeroBanner banner={doc.data}/>
         <SliceZone sliceZone={doc.data.body} />
       </div>
