@@ -3,6 +3,8 @@ import { Client } from '../../prismic-configuration'
 import { SliceZone } from '../../components'
 import { queryRepeatableDocuments } from '../../util/queries'
 import Loader from '../../components/Loader'
+import Head from 'next/head'
+import { RichText } from 'prismic-reactjs'
 
 
 const Clients = ({ doc }) => {
@@ -17,7 +19,7 @@ const Clients = ({ doc }) => {
                   content = {RichText.asText(doc.data.meta_description)}
                 />
               </Head>
-              
+
               <SliceZone sliceZone={doc.data.body} />
             </div>
         )

@@ -3,6 +3,8 @@ import { Client } from '../prismic-configuration'
 import HeroBanner from '../components/HeroBanner'
 import { SliceZone } from '../components'
 import Loader from '../components/Loader'
+import Head from 'next/head'
+import { RichText } from 'prismic-reactjs'
 
 export default function Home({ doc }) {
   if(!doc && posts) return <Loader />
