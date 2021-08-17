@@ -5,26 +5,26 @@ function Loader() {
 
     //bounce distance
     const load = {
-        start: {
-            y: '45%'
+        visible: {
+            opacity: '100%',
         },
-        end: {
-            y: '55%'
+        hidden: {
+            opacity: '5%'
         }
     }
 
     //bounce effect
     const transition = {
-        duration: .6,
+        duration: .8,
         flip: Infinity,
-        ease: 'easeInOut'
+        ease: 'easeIn'
     }
 
     return (
         <motion.div 
             className='z-40 h-full w-full flex items-center justify-center fixed top-0 left-0 bg-white opacity-100'
-            initial='start'
-            animate='end'
+            initial='visible'
+            animate='hidden'
         >
                 <motion.h1
                     className='text-5xl font-bold'
