@@ -8,5 +8,6 @@ export { default as CompanyBlock } from './CompanyBlock'
 export { default as TeamBlock } from './TeamBlock'
 export { default as ServicesBlock } from './ServicesBlock'
 export { default as StepsBlock } from './StepsBlock'
+export { default as Contact } from './Contact'
 
 export { default as SliceZone } from './SliceZone'

@@ -19,7 +19,7 @@ const Page = ({ doc, clients }) => {
             <Head>
               <title> {RichText.asText(doc.data.meta_title)} </title>
               <meta 
-                name='description'
+                name='description' 
                 content = {RichText.asText(doc.data.meta_description)}
               />
             </Head>
