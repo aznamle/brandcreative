@@ -7,7 +7,7 @@ import Image from 'next/image'
 const ServicesBlock = ({ slice }) => {
     return (
         <div className='bg-gray-100'>
-            <div className='max-w-screen-2xl mx-auto py-36 space-y-16 md:space-y-6'>
+            <div className='max-w-screen-2xl mx-auto py-36 space-y-16 md:space-y-6 px-4 md:px-0'>
                     
                     <h1 className='text-center font-extralight text-4xl'>
                         {RichText.asText(slice.primary.service_block_title)}
