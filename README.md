@@ -4,7 +4,7 @@
 </div>
 
 ![demo](./public/bc1.png)
-![demo](./public/bc2.png)
+![demo](./public/bc3.png)
 
 ## Run it on your machine
 
