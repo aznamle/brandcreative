@@ -31,4 +31,4 @@
     <p>
         Built with <a href="https://www.nextjs.org/" target="_blank">Next.js</a> and hosted with <a href="https://www.vercel.com/" target="_blank">Vercel</a>
     </p>
-</div>
+</div># Brandcreative-LLC.
